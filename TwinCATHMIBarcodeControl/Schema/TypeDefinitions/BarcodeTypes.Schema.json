@@ -1,0 +1,31 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "TcHmi.Controls.TwinCAT-HMI-Barcode.BarcodeTypes": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "Barcode Type",
+      "type": "string",
+      "enum": [
+        "CODE128",
+        "CODE128A",
+        "CODE128B",
+        "CODE128C",
+        "CODE39",
+        "EAN13",
+        "EAN8",
+        "EAN5",
+        "EAN2",
+        "UPC",
+        "ITF14",
+        "MSI",
+        "MSI10",
+        "MSI11",
+        "MSI1010",
+        "MSI1110",
+        "pharmacode",
+        "codabar"
+      ],
+      "default": "CODE128"
+    }
+  }
+}

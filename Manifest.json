@@ -1,0 +1,28 @@
+﻿{
+  "$schema": ".hmiframework/Schema/Manifest.Schema.json",
+  "apiVersion": 1,
+  "modules": [
+    {
+      "type": "Package",
+      "nugetId": "Beckhoff.TwinCAT.HMI.Framework"
+    },
+    {
+      "type": "Control",
+      "basePath": "TwinCATHMIBarcodeControl/",
+      "descriptionFile": "Description.json",
+      "toolboxCategory": "Beckhoff.TwinCAT.HMI:202"
+    },
+    {
+      "type": "Resource",
+      "basePath": "TwinCAT-HMI-Barcode/",
+      "path": "./node_modules/jsbarcode/dist/JsBarcode.all.min.js"
+    }
+  ],
+  "provideMetadata": {
+    "toolbox": {
+      "TwinCAT-HMI-Barcode": {
+        "200": "TwinCAT-HMI-Barcode"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "twincat-hmi-barcode",
+  "version": "1.0.0",
+  "description": "Barcode generator for TwinCAT HMI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PerfectlyMint/TwinCAT-HMI-Barcode.git"
+  },
+  "author": "Perfectly Mint",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PerfectlyMint/TwinCAT-HMI-Barcode/issues"
+  },
+  "homepage": "https://github.com/PerfectlyMint/TwinCAT-HMI-Barcode#readme",
+  "dependencies": {
+    "@types/jsbarcode": "^3.11.0",
+    "jsbarcode": "^3.11.3"
+  }
+}

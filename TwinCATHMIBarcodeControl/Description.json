@@ -1,0 +1,122 @@
+﻿{
+  "$schema": "../.hmiframework/Schema/ControlDescription.Schema.json",
+  "apiVersion": 1,
+  "name": "TwinCATHMIBarcodeControl",
+  "namespace": "TcHmi.Controls.TwinCAT_HMI_Barcode",
+  "displayName": "Barcode",
+  "version": {
+    "full": "1.0.0.0",
+    "major": 1,
+    "minor": 0,
+    "revision": 0,
+    "build": 0
+  },
+  "visible": true,
+  "themeable": "Standard",
+  "base": "TcHmi.Controls.System.TcHmiControl",
+  "description": "A simple barcode.",
+  "properties": {
+    "containerControl": false,
+    "geometry": {
+      "width": 150,
+      "height": 100
+    }
+  },
+  "template": "Template.html",
+  "icons": [
+    {
+      "name": "Icons/16x16.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "name": "Icons/24x24.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "name": "Icons/32x32.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "name": "Icons/64x64.png",
+      "width": 64,
+      "height": 64
+    }
+  ],
+  "dependencyFiles": [
+    {
+      "name": "TwinCATHMIBarcodeControl.js",
+      "type": "JavaScript",
+      "description": "Contains all the main logic."
+    },
+    {
+      "name": "Style.css",
+      "type": "Stylesheet",
+      "description": "Theme independent style"
+    }
+  ],
+  "themes": {
+    "Base": {
+      "resources": [
+        {
+          "name": "Themes/Base/Style.css",
+          "type": "Stylesheet",
+          "description": "Theme dependent style"
+        }
+      ]
+    }
+  },
+  "attributes": [
+    {
+      "name": "data-tchmi-barcode-value",
+      "propertyName": "Value",
+      "propertySetterName": "__setBarcodeValue",
+      "propertyGetterName": "__getBarcodeValue",
+      "displayName": "Barcode Value",
+      "visible": true,
+      "themeable": "Standard",
+      "displayPriority": 20,
+      "type": "tchmi:general#/definitions/String",
+      "category": "Common",
+      "description": "Barcode Value.",
+      "readOnly": false,
+      "bindable": true,
+      "defaultBindingMode": "OneWay",
+      "heritable": true,
+      "defaultValue": "1234",
+      "defaultValueInternal": "1234"
+    },
+    {
+      "name": "data-tchmi-barcode-type",
+      "propertyName": "BarcodeType",
+      "propertySetterName": "__setBarcodeType",
+      "propertyGetterName": "__getBarcodeType",
+      "displayName": "Barcode Type",
+      "visible": true,
+      "themeable": "Standard",
+      "displayPriority": 20,
+      "type": "tchmi:framework#/definitions/TcHmi.Controls.TwinCAT-HMI-Barcode.BarcodeTypes",
+      "category": "Common",
+      "description": "Barcode Type.",
+      "readOnly": false,
+      "bindable": true,
+      "defaultBindingMode": "OneWay",
+      "heritable": true,
+      "defaultValue": "CODE128",
+      "defaultValueInternal": "CODE128"
+    }
+  ],
+  "attributeCategories": [],
+  "functions": [],
+  "events": [],
+  "dataTypes": [
+    {
+      "schema": "Schema/Types.Schema.json"
+    },
+    {
+      "schema": "Schema/TypeDefinitions/BarcodeTypes.Schema.json"
+    }
+  ]
+}
